@@ -1,0 +1,108 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #f0f0f0;
+  --tooltip-bg: #333;
+  --tooltip-text: #fff;
+}
+
+.skills-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.tech-stack-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.tech-stack-box {
+  width: calc(20% - 20px);
+  max-width: 160px;
+  height: 120px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.tech-stack-box:hover {
+  transform: translateY(-5px);
+}
+
+.tech-stack-box img {
+  width: 70%;
+  height: auto;
+}
+
+.tooltip {
+  font-size: 0.9rem;
+  padding: 4px 10px;
+  top: -20px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  background: var(--tooltip-bg);
+  color: var(--tooltip-text);
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  transform: translateY(-5px);
+}
+
+.tech-stack-box:hover .tooltip {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.skills-section {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.skills-section.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .tech-stack-box {
+      width: calc(25% - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  .tech-stack-box {
+      width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-stack-box {
+      width: calc(50% - 10px);
+      font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack-box {
+      width: calc(50% - 10px);
+      font-size: 2em;
+  }
+}
