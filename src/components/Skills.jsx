@@ -65,10 +65,6 @@ function Skills() {
               <div className="tooltip">Tailwaind CSS</div>
             </div>
             <div className="tech-stack-box" data-aos="fade-up">
-              <img alt="HTML" src="/Images/Logo/nodejs.svg" />
-              <div className="tooltip">NodeJS</div>
-            </div>
-            <div className="tech-stack-box" data-aos="fade-up">
               <img alt="HTML" src="/Images/Logo/bootstrap.png" />
               <div className="tooltip">Bootstrap</div>
             </div>
