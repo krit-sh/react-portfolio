@@ -85,14 +85,6 @@ function Skills() {
               <div className="tooltip">Java</div>
             </div>
             <div className="tech-stack-box" data-aos="fade-up">
-              <img alt="HTML" src="/Images/Logo/docker-mark-blue.svg" />
-              <div className="tooltip">Docker</div>
-            </div>
-            <div className="tech-stack-box" data-aos="fade-up">
-              <img alt="HTML" src="/Images/Logo/kubernetslogo.svg" />
-              <div className="tooltip">Kubernetes</div>
-            </div>
-            <div className="tech-stack-box" data-aos="fade-up">
               <img alt="HTML" src="/Images/Logo/bash.svg" />
               <div className="tooltip">Bash Scripting</div>
             </div>
